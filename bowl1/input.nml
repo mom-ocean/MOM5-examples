@@ -94,7 +94,7 @@
       potrho_min=1028.0
       potrho_max=1038.0
       layer_nk=100
-      linear_eos=.true.
+      eos_linear=.true.
 /
 
  &ocean_domains_nml
@@ -406,7 +406,7 @@
       smooth_blmc=.true.
 /
 
- &ocean_vert_kpp_nml
+ &ocean_vert_kpp_mom4p1_nml
       use_this_module=.false.
       diff_cbt_iw = 1.34e-7
       visc_cbu_iw = 1.34e-6

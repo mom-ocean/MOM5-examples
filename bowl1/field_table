@@ -2,16 +2,16 @@
 horizontal-advection-scheme = mdfl_sweby
 vertical-advection-scheme = mdfl_sweby
 psom_limit=.true.
-ppm_hlimiter=3
-ppm_vlimiter=3
+ppm_hlimiter=2
+ppm_vlimiter=2
 restart_file  = ocean_temp_salt.res.nc
 /
 "prog_tracers","ocean_mod","salt"
 horizontal-advection-scheme = psom
 vertical-advection-scheme = psom
 psom_limit=.true.
-ppm_hlimiter=3
-ppm_vlimiter=3
+ppm_hlimiter=2
+ppm_vlimiter=2
 restart_file  = ocean_temp_salt.res.nc
 /
 "tracer_packages","ocean_mod","ocean_age_tracer"
@@ -19,8 +19,8 @@ names = global
 horizontal-advection-scheme = mdppm
 vertical-advection-scheme = mdppm
 psom_limit=.true.
-ppm_hlimiter=3
-ppm_vlimiter=3
+ppm_hlimiter=2
+ppm_vlimiter=2
 restart_file  = ocean_age.res.nc
 min_tracer_limit=0.0
 /
