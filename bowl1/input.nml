@@ -41,6 +41,7 @@
       zero_tendency=.false.
       zero_forcing_bt=.false.
       zero_nonlinear_forcing_bt=.false.
+      barotropic_time_stepping_A=.true.
 /
 
  &ocean_bbc_nml
