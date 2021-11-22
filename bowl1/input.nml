@@ -111,10 +111,6 @@
 
  &ocean_frazil_nml
       use_this_module=.false.
-      freezing_temp_simple=.true.
-      freezing_temp_accurate=.false.
-      frazil_only_in_surface=.true.
-      frazil_factor=1.0
 /
 
  &ocean_grids_nml
