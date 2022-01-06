@@ -1,8 +1,8 @@
 "MOM4 box"
 1980 1 1 0 0 0
-"ocean_prog" ,   10,"days",1,"days","Time"
+"ocean_prog",    10,"days",1,"days","Time"
 "ocean_trans",   10,"days",1,"days","Time"
-"ocean_surf" ,   10,"days",1,"days","Time"
+"ocean_surf",    10,"days",1,"days","Time"
 "ocean_layer",   10,"days",1,"days","Time"
 "ocean_param",   10,"days",1,"days","Time"
 "ocean_neutral", 10,"days",1,"days","Time"
@@ -46,9 +46,9 @@
 "ocean_model","ty_trans","ty_trans",            "ocean_trans","all",.true.,"none",2
 "ocean_model","tx_trans_gm","tx_trans_gm",      "ocean_trans","all",.true.,"none",2
 "ocean_model","ty_trans_gm","ty_trans_gm",      "ocean_trans","all",.true.,"none",2
-"ocean_model","ty_trans_theta","ty_trans_theta" ,"ocean_trans","all",.true.,"none",2
-"ocean_model","ty_trans_rho","ty_trans_rho"     ,"ocean_trans","all",.true.,"none",2
-#"ocean_model","ty_trans_nrho","ty_trans_nrho"   ,"ocean_trans","all",.true.,"none",2
+"ocean_model","ty_trans_theta","ty_trans_theta","ocean_trans","all",.true.,"none",2
+"ocean_model","ty_trans_rho","ty_trans_rho",    "ocean_trans","all",.true.,"none",2
+#"ocean_model","ty_trans_nrho","ty_trans_nrho", "ocean_trans","all",.true.,"none",2
 #=================================================================================================
 # diagnosing tracer transport 
 "ocean_model","temp_adv_flux_x_int_z","temp_adv_flux_x_int_z", "ocean_trans","all",.true.,"none",2
