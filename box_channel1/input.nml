@@ -29,10 +29,8 @@
 
  &ocean_barotropic_nml
       debug_this_module=.false.
-      barotropic_leap_frog=.false.
-      barotropic_pred_corr=.true.
-      barotropic_time_stepping_mom4p0=.true.
-      barotropic_time_stepping_mom4p1=.false.     
+      barotropic_time_stepping_A=.true.
+      barotropic_time_stepping_B=.false.     
       pred_corr_gamma=0.2
       smooth_eta_t_laplacian=.false.
       smooth_pbot_t_laplacian=.false.
@@ -97,7 +95,7 @@
       potrho_min=1030.0
       potrho_max=1035.0
       layer_nk=100
-      linear_eos=.true.
+      eos_linear=.true.
 /
 
  &ocean_domains_nml
@@ -115,7 +113,6 @@
  &ocean_frazil_nml
       use_this_module=.false.
       freezing_temp_simple=.true.
-      freezing_temp_accurate=.false.
       frazil_only_in_surface=.true.
       frazil_factor=1.0
 /
@@ -430,7 +427,7 @@
       use_this_module=.false.
 /
 
- &ocean_vert_kpp_nml
+ &ocean_vert_kpp_mom4p1_nml
       use_this_module=.false.
       diff_cbt_iw = 1.34e-7
       visc_cbu_iw = 1.34e-6
