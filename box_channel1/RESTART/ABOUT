@@ -1,0 +1,3 @@
+Need a RESTART directory for the model to run without error, but git
+does not support empty directories, so a file is required to be present
+in this directory. Hence ...
