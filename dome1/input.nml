@@ -30,10 +30,8 @@
 
  &ocean_barotropic_nml
       debug_this_module=.false.
-      barotropic_leap_frog=.false.
-      barotropic_pred_corr=.true.
-      barotropic_time_stepping_mom4p0=.true.
-      barotropic_time_stepping_mom4p1=.false.     
+      barotropic_time_stepping_A=.true.
+      barotropic_time_stepping_B=.false.     
       pred_corr_gamma=0.2
       smooth_eta_t_laplacian=.true.
       smooth_pbot_t_laplacian=.true.
@@ -106,7 +104,7 @@
       potrho_min=1030.7
       potrho_max=1035.5
       layer_nk=80
-      linear_eos=.true.
+      eos_linear=.true.
       rho0_density=.false.
 /
 
@@ -466,7 +464,7 @@
       min_diss= 1.e-10
 /
 
- &ocean_vert_kpp_nml
+ &ocean_vert_kpp_mom4p1_nml
       use_this_module=.false.
       non_local_kpp=.true.
       diff_cbt_iw = 1.34e-7
