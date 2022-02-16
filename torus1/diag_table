@@ -1,0 +1,73 @@
+"mom4p1 torus"
+1980 1 1 0 0 0
+"ocean_snap", 0,"days",1,"hours","Time"
+#
+#diagnostic field entries
+#===========================================================================
+# ocean model grid quantities (static fields and so not time averaged)
+"ocean_model","geolon_t","geolon_t",   "ocean_snap" ,"all",.false.,"none",2
+"ocean_model","geolat_t","geolat_t",   "ocean_snap" ,"all",.false.,"none",2
+"ocean_model","geolon_c","geolon_c",   "ocean_snap" ,"all",.false.,"none",2
+"ocean_model","geolat_c","geolat_c",   "ocean_snap" ,"all",.false.,"none",2
+"ocean_model","area_t","area_t",       "ocean_snap" ,"all",.false.,"none",2
+"ocean_model","area_u","area_u",       "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","dxt","dxt",             "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","dxu","dxu",             "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","dyt","dyt",             "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","dyu","dyu",             "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","dxtn","dxtn",           "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","dyte","dyte",           "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","ht","ht",               "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","hu","hu",               "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","ue","ue",               "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","vn","vn",               "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","wb","wb",               "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","ue_rhodzt","ue_rhodzt", "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","vn_rhodzt","vn_rhodzt", "ocean_snap" ,"all",.false.,"none",2
+#"ocean_model","wb_rho","wb_rho",       "ocean_snap" ,"all",.false.,"none",2
+#===========================================================================
+# prognostic fields
+"ocean_model","passive_tracer_a","passive_tracer_a", "ocean_snap","all",.false.,"none",2
+"ocean_model","passive_tracer_b","passive_tracer_b", "ocean_snap","all",.false.,"none",2
+"ocean_model","passive_tracer_c","passive_tracer_c", "ocean_snap","all",.false.,"none",2
+"ocean_model","passive_tracer_d","passive_tracer_d", "ocean_snap","all",.false.,"none",2
+"ocean_model","passive_tracer_e","passive_tracer_e", "ocean_snap","all",.false.,"none",2
+"ocean_model","passive_tracer_f","passive_tracer_f", "ocean_snap","all",.false.,"none",2
+"ocean_model","passive_tracer_g","passive_tracer_g", "ocean_snap","all",.false.,"none",2
+"ocean_model","eta_t","eta_t",                       "ocean_snap","all",.false.,"none",2
+"ocean_model","uhrho_et","uhrho_et",                 "ocean_snap","all",.false.,"none",2
+"ocean_model","vhrho_nt","vhrho_nt",                 "ocean_snap","all",.false.,"none",2
+"ocean_model","wrhot","wrhot",                       "ocean_snap","all",.false.,"none",2
+#"ocean_model","u","u",                               "ocean_snap","all",.false.,"none",2
+#"ocean_model","v","v",                               "ocean_snap","all",.false.,"none",2
+#"ocean_model","rho_dzu","rho_dzu",                   "ocean_snap","all",.false.,"none",2
+#===========================================================================
+#
+#  FORMATS FOR FILE ENTRIES (not all input values are used)
+#  ------------------------
+#
+#"file_name", output_freq, "output_units", format, "time_units", "long_name"
+#
+#
+#   output_freq:  > 0  output frequency in "output_units"
+#                 = 0  output frequency every time step
+#                 =-1  output frequency at end of run
+#
+#   output_units = units used for output frequency
+#                  (years, months, days, minutes, hours, seconds)
+#
+#   time_units   = units used to label the time axis
+#                  (days, minutes, hours, seconds)
+#
+#
+#  FORMAT FOR FIELD ENTRIES (not all input values are used)
+#  ------------------------
+#
+#"module_name", "field_name", "output_name", "file_name", "time_sampling", time_avg, "other_opts", packing
+#
+#   time_avg = .true. or .false. or min or max
+#
+#   packing  = 1  double precision
+#            = 2  float
+#            = 4  packed 16-bit integers
+#            = 8  packed 1-byte (not tested?)

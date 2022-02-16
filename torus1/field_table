@@ -1,0 +1,69 @@
+"prog_tracers","ocean_mod","temp"
+horizontal-advection-scheme = mdfl_sweby
+vertical-advection-scheme = mdfl_sweby
+restart_file  = ocean_temp_salt.res.nc
+const_init_tracer=.true.
+const_init_value=12.0
+/
+"prog_tracers","ocean_mod","salt"
+horizontal-advection-scheme = mdfl_sweby
+vertical-advection-scheme = mdfl_sweby
+restart_file  = ocean_temp_salt.res.nc
+const_init_tracer=.true.
+const_init_value=35.0
+/
+"tracer_packages","ocean_mod","ocean_passive"
+names = tracer_a, tracer_b, tracer_c, tracer_d, tracer_e, tracer_f, tracer_g
+/
+"prog_tracers","ocean_mod","passive_tracer_a"
+horizontal-advection-scheme = psom
+vertical-advection-scheme = psom
+psom_limit=.false.
+/
+"prog_tracers","ocean_mod","passive_tracer_b"
+horizontal-advection-scheme = psom
+vertical-advection-scheme = psom
+psom_limit=.true.
+/
+"prog_tracers","ocean_mod","passive_tracer_c"
+horizontal-advection-scheme = mdppm
+vertical-advection-scheme = mdppm
+/
+"prog_tracers","ocean_mod","passive_tracer_d"
+horizontal-advection-scheme = mdfl_sweby
+vertical-advection-scheme = mdfl_sweby
+/
+"prog_tracers","ocean_mod","passive_tracer_e"
+horizontal-advection-scheme = mdfl_sup_b
+vertical-advection-scheme = mdfl_sup_b
+/
+"prog_tracers","ocean_mod","passive_tracer_f"
+horizontal-advection-scheme = quicker
+vertical-advection-scheme = quicker
+/
+"prog_tracers","ocean_mod","passive_tracer_g"
+horizontal-advection-scheme = upwind
+vertical-advection-scheme = upwind
+psom_limit=.false.
+/
+"namelists","ocean_mod","ocean_passive/tracer_a"
+init_condition=patch
+/
+"namelists","ocean_mod","ocean_passive/tracer_b"
+init_condition=patch
+/
+"namelists","ocean_mod","ocean_passive/tracer_c"
+init_condition=patch
+/
+"namelists","ocean_mod","ocean_passive/tracer_d"
+init_condition=patch
+/
+"namelists","ocean_mod","ocean_passive/tracer_e"
+init_condition=patch
+/
+"namelists","ocean_mod","ocean_passive/tracer_f"
+init_condition=patch
+/
+"namelists","ocean_mod","ocean_passive/tracer_g"
+init_condition=patch
+/
