@@ -1,0 +1,14 @@
+"prog_tracers","ocean_mod","temp"
+horizontal-advection-scheme = mdfl_sweby
+vertical-advection-scheme = mdfl_sweby
+restart_file  = ocean_temp_salt.res.nc
+const_init_tracer=.true.
+const_init_value=12.5
+/
+"prog_tracers","ocean_mod","salt"
+horizontal-advection-scheme = mdfl_sweby
+vertical-advection-scheme = mdfl_sweby
+restart_file  = ocean_temp_salt.res.nc
+const_init_tracer=.true.
+const_init_value=35.0
+/
